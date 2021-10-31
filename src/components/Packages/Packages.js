@@ -12,13 +12,18 @@ const Packages = () => {
             .then(data => setItems(data))
     }, [])
     return (
-        <div className="packages-container">
-            {
+        //  showing all package section
+        <div className="container">
+            <h2 className="text-danger my-3">Our services</h2>
+            <hr />
+            <div className="row g-3">
+                {
                 items.map(item => <Package
                     key={item._id}
                     item={item}
                 ></Package>)
             }
+            </div>
         </div>
     );
 };

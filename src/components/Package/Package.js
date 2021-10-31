@@ -5,22 +5,20 @@ import './Package.css';
 const Package = ({ item }) => {
     const { packajeName, description, price, img, _id } = item;
     return (
-        <div>
-            <div class="col-4 mb-5">
-                <div class="card">
-                    <img src={img} class="card-image" alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">{packajeName}</h5>
-                        <p class="card-text">{description}</p>
+       // pacakge section
+            <div className="col-lg-4 col-md-6 col-12 ">
+                <div class="my-2 ">
+                    <img src={img} class="img-fluid rounded w-75" alt="..." />
+                        <h5 class="card-title">{packajeName.slice(0,20)}</h5>
+                        <p class="card-text">{description.slice(0,40)}</p>
                         <h5 class="card-text">${price}</h5>
                         <Link to={`/review/${_id}`}>
-                            <button type="button" class="btn btn-outline-info m-2">Book:
-                                {packajeName.toLowerCase()}</button>
+                            <button type="button" class="btn btn-outline-danger m-2">Book:
+                                {packajeName.toUpperCase()}</button>
                         </Link>
-                    </div>
-                </div>
+                </div> 
             </div>
-        </div>
+       
     );
 };
 

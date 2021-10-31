@@ -23,7 +23,7 @@ const AddPackage = () => {
 
     return (
         <div className="m-5">
-            <h1 className="text-center text-info package-title">Please Add Tour Package</h1>
+            <h1 className="text-center text-danger package-title">Please Add Tour Package</h1>
             <div className="login-box w-25 m-auto m-5">
                 <div className="package-box border border d-flex justify-content-center align-items-center">
                     <div className="login-form">
@@ -56,7 +56,7 @@ const AddPackage = () => {
 
                             {errors.exampleRequired && <span>This field is required</span>}
 
-                            <input type="submit" value="Add Event" className="btn btn-info w-50" />
+                            <input type="submit" value="Add Event" className="btn btn-secondary w-50" />
                         </form>
                     </div>
                 </div>

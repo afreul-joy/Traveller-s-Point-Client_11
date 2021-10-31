@@ -8,16 +8,16 @@ import './Header.css';
 const Header = () => {
     const { user, logOut } = useAuth();
     return (
-        <div  >
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="light" fixed="top" >
-                <Container>
+        <div className="container" >
+            <Navbar collapseOnSelect expand="lg" bg="warning" variant="light" >
+                <Container> 
 
                     <Navbar.Brand href="#home" className="text-secondary ">
                         Enjoy Holidays</Navbar.Brand>
                     <Navbar.Toggle />
 
                     <Navbar.Collapse className="justify-content-end">
-                        <Nav className="me-auto p-3">
+                        <Nav className="me-auto">
                             <NavLink className="mx-1" to="/home">
                                 <Button variant="outline-secondary">Home</Button>
                             </NavLink>
@@ -30,7 +30,7 @@ const Header = () => {
 
 
                             <nav>
-                                <NavDropdown title="Others Menu" id="collasible-nav-dropdown" className="mx-1 btn btn-outline-secondary text-white">
+                                <NavDropdown title="Others Menu" id="collasible-nav-dropdown" className=" btn btn-outline-secondary text-white">
                                     <NavDropdown.Item href="#action/3.1">
                                         <NavLink className="mx-1" to="/manageAllOrder">
                                             <Button variant="outline-secondary">Manage All Order</Button>

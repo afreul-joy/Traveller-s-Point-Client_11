@@ -3,7 +3,7 @@ import { Table } from 'react-bootstrap';
 import './Manageorder.css';
 
 const Manageorder = () => {
-
+    // manager order section
     const [allOrder, setAllOrder] = useState([]);
 
 
@@ -36,7 +36,7 @@ const Manageorder = () => {
     return (
         <div className="manage-container">
             <div className='my-5'>
-                <h1 className="text-info m-5">Manage All Orders {allOrder?.length}</h1>
+                <h1 className="text-danger m-5">Manage All Orders {allOrder?.length}</h1>
                 <Table striped bordered hover>
                     <thead>
                         <tr>
@@ -56,7 +56,7 @@ const Manageorder = () => {
                                 <td>{allOrder?.packajeName}</td>
                                 <td>{allOrder?.price}</td>
                                 <td>{allOrder?.email}</td>
-                                <button onClick={() => handleDelete(allOrder?._id)} className="btn bg-danger p-2">Delete</button>
+                                <button onClick={() => handleDelete(allOrder?._id)} className="btn bg-warning p-2">Delete</button>
                             </tr>
                         </tbody>
                     ))}

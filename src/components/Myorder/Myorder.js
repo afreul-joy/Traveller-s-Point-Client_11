@@ -4,6 +4,7 @@ import useAuth from '../../hook/useAuth';
 import './Myorder.css';
 
 const Myorder = () => {
+    // my order section
     const { user } = useAuth();
     const [myOrders, setMyOrders] = useState([]);
 
@@ -41,7 +42,7 @@ const Myorder = () => {
 
     return (
         <div className='myorder-review'>
-            <h1 className="text-info m-5">My order: {myOrders?.length}</h1>
+            <h1 className="text-muted m-5">My order: {myOrders?.length}</h1>
             <Table bordered hover>
                 <thead>
                     <tr>
