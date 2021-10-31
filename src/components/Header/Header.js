@@ -8,19 +8,12 @@ import './Header.css';
 const Header = () => {
     const { user, logOut } = useAuth();
     return (
-        <div>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top" >
+        <div  >
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="light" fixed="top" >
                 <Container>
 
-                    <Navbar.Brand href="#home" className="text-secondary">
-                        <img
-                            src={logo}
-                            width="30"
-                            height="30"
-                            className="d-inline-block align-top "
-                            alt=""
-                        />
-                        Dream Holidays</Navbar.Brand>
+                    <Navbar.Brand href="#home" className="text-secondary ">
+                        Enjoy Holidays</Navbar.Brand>
                     <Navbar.Toggle />
 
                     <Navbar.Collapse className="justify-content-end">
@@ -51,18 +44,6 @@ const Header = () => {
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item href="#action/3.4"><button onClick={logOut} type="button" className="btn btn-outline-secondary mx-1 justify-content-end ">Logout</button></NavDropdown.Item>
                                 </NavDropdown>
-
-
-                                {/* <NavLink className="mx-1" to="/manageAllOrder">
-                                    <Button variant="outline-secondary">Manage All Order</Button>
-                                </NavLink>
-                                <NavLink className="mx-1" to="/myOrders">
-                                    <Button variant="outline-secondary">Myorders</Button>
-                                </NavLink>
-                                <NavLink className="mx-1" to="/addPackage">
-                                    <Button variant="outline-secondary">Addpackage</Button>
-                                </NavLink>
-                                <button onClick={logOut} type="button" className="btn btn-outline-secondary mx-1 justify-content-end ">Logout</button> */}
                             </nav>
                             :
 
