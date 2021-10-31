@@ -1,9 +1,9 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyD3GeZKgDfSS38YljsEjz6ZUR5S2eRnbo0",
-    authDomain: "tourism-booking.firebaseapp.com",
-    projectId: "tourism-booking",
-    storageBucket: "tourism-booking.appspot.com",
-    messagingSenderId: "176867364326",
-    appId: "1:176867364326:web:9c8fdc6732ad6aa8c11a27"
+   apiKey: "AIzaSyAkeZwcuUIpo9kJSzUJdXSQ5g1KZlZYH5c",
+  authDomain: "holyday-e984b.firebaseapp.com",
+  projectId: "holyday-e984b",
+  storageBucket: "holyday-e984b.appspot.com",
+  messagingSenderId: "614124425073",
+  appId: "1:614124425073:web:8cf5c283aca98526dcb0d0"
 };
 export default firebaseConfig;
