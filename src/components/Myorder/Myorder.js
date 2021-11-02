@@ -9,7 +9,7 @@ const Myorder = () => {
     const [myOrders, setMyOrders] = useState([]);
 
     useEffect(() => {
-        fetch(`https://boiling-eyrie-00422.herokuapp.com/myOrders/${user?.email}`)
+        fetch(`https://shocking-ghoul-97788.herokuapp.com/myOrders/${user?.email}`)
             .then(res => res.json())
             .then(data => setMyOrders(data));
     }, [user?.email]);
@@ -18,7 +18,7 @@ const Myorder = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm("Are you sure, you want to delete?");
         if (proceed) {
-            fetch(`https://boiling-eyrie-00422.herokuapp.com/orders/${id}`, {
+            fetch(`https://shocking-ghoul-97788.herokuapp.com/orders/${id}`, {
                 method: "DELETE",
                 headers: { "content-type": "application/json" },
             })

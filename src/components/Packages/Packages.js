@@ -7,7 +7,7 @@ import './Packages.css';
 const Packages = () => {
     const [items, setItems] = useState([]);
     useEffect(() => {
-        fetch('https://boiling-eyrie-00422.herokuapp.com/packages')
+        fetch('https://shocking-ghoul-97788.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])

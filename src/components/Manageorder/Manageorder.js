@@ -8,7 +8,7 @@ const Manageorder = () => {
 
 
     useEffect(() => {
-        fetch('https://boiling-eyrie-00422.herokuapp.com/manageAllOrder')
+        fetch('https://shocking-ghoul-97788.herokuapp.com/manageAllOrder')
             .then(res => res.json())
             .then(data => setAllOrder(data));
     }, [allOrder?._id]);
@@ -16,7 +16,7 @@ const Manageorder = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm("Are you sure, you want to delete?");
         if (proceed) {
-            fetch(`https://boiling-eyrie-00422.herokuapp.com/orders/${id}`, {
+            fetch(`https://shocking-ghoul-97788.herokuapp.com/orders/${id}`, {
                 method: "DELETE",
                 headers: { "content-type": "application/json" },
             })

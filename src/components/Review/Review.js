@@ -12,7 +12,7 @@ const Review = () => {
 
     const [singleReview, setSingleReview] = useState({});
     useEffect(() => {
-        fetch('https://boiling-eyrie-00422.herokuapp.com/packages')
+        fetch('https://shocking-ghoul-97788.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => {
                 const foundReview = data.find(review => review._id == reviewId)
@@ -25,7 +25,7 @@ const Review = () => {
     const onSubmit = data => {
         data.email = user?.email;
         data.status = 'Pending';
-        fetch('https://boiling-eyrie-00422.herokuapp.com/orders', {
+        fetch('https://shocking-ghoul-97788.herokuapp.com/orders', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data),
@@ -41,18 +41,18 @@ const Review = () => {
         console.log(data);
     }
     return (
-        <div className="review-section">
-            <div className="row">
-                <div class="card col-lg-6 col-sm-12 mb-5 mt-5 mx-auto">
-                    <img src={singleReview.img} class="details-image" alt="..." />
+        <div className="container">
+            <div className="row my-5">
+                <div class="card col-lg-6 col-md-6 col-12  ">
+                    <img src={singleReview.img} class="img-fluid" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title text-info">{singleReview.packajeName}</h5>
                         <p class="card-text">{singleReview.description}</p>
                         <h3 class="card-text text-info">${singleReview.price}</h3>
                     </div>
                 </div>
-                <div className="col-lg-6 col-sm-12 mx-auto">
-                    <h4 className="booking-text text-info">Information for Booking</h4>
+                <div className="col-lg-6 col-md-6  col-12 ">
+                    <h4 className="text-waring my-3">Booking Requirement</h4>
                     <div className="login-box w-50 mx-auto mt-5">
                         <div className="package-box d-flex justify-content-center align-items-center">
                             <div className="login-form">

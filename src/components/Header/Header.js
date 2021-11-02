@@ -2,18 +2,17 @@ import React from 'react';
 import { Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../hook/useAuth';
-import logo from '../../image/react-logo-svgrepo-com.svg';
 import './Header.css';
 
 const Header = () => {
     const { user, logOut } = useAuth();
     return (
-        <div className="container" >
-            <Navbar collapseOnSelect expand="lg" bg="warning" variant="light" >
+        <div className="container" > 
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="light" >
                 <Container> 
 
-                    <Navbar.Brand href="#home" className="text-secondary ">
-                        Enjoy Holidays</Navbar.Brand>
+                    <Navbar.Brand href="#home" className="text-white ">
+                        Traveller’s Point</Navbar.Brand>
                     <Navbar.Toggle />
 
                     <Navbar.Collapse className="justify-content-end">
@@ -30,7 +29,7 @@ const Header = () => {
 
 
                             <nav>
-                                <NavDropdown title="Others Menu" id="collasible-nav-dropdown" className=" btn btn-outline-secondary text-white">
+                                <NavDropdown title="Menu" id="collasible-nav-dropdown" className=" btn btn-outline-secondary">
                                     <NavDropdown.Item href="#action/3.1">
                                         <NavLink className="mx-1" to="/manageAllOrder">
                                             <Button variant="outline-secondary">Manage All Order</Button>

@@ -10,7 +10,7 @@ const AddPackage = () => {
 
     const onSubmit = data => {
         // data.email = user?.email;
-        fetch('https://boiling-eyrie-00422.herokuapp.com/addPackage', {
+        fetch('https://shocking-ghoul-97788.herokuapp.com/addPackage', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data),
